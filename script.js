@@ -4,7 +4,7 @@ function cssScroll(csdebugsetting) {
   var events = Object.keys(cssScrollConditions)
 
   if(csdebug) console.log("events:",events)
-  if(csdebug) console.log("csdebug",csdebug)
+  if(csdebug) console.log("csdebug:",csdebug)
 
   
   window.addEventListener("scroll", ()=>{
@@ -55,7 +55,7 @@ var cssScrollConditions = {
   pagetop: function(element) {
     var pagetop = window.scrollY == 0
     
-    if(csdebug) console.log("pagetop condition",pagetop)
+    if(csdebug) console.log("pagetop condition:",pagetop)
     return pagetop
   },
   intoview: function(element) {
@@ -64,7 +64,7 @@ var cssScrollConditions = {
 
     var intoview = elementy <= 0
     
-    if(csdebug) console.log("intoview condition",intoview)
+    if(csdebug) console.log("intoview condition:",intoview)
     return intoview
   },
   pastview: function(element) {
@@ -73,7 +73,7 @@ var cssScrollConditions = {
 
     var pastview = elementy <= 0
     
-    if(csdebug) console.log("pastview condition",pastview)
+    if(csdebug) console.log("pastview condition:",pastview)
     return pastview
   },
   pagebottom: function(element) {
@@ -81,7 +81,7 @@ var cssScrollConditions = {
     var pageposition = window.scrollY 
     var pagebottom = pageposition == pageheight
     
-    if(csdebug) console.log("pagebottom condition",pagebottom)
+    if(csdebug) console.log("pagebottom condition:",pagebottom)
     return pagebottom
   }
 }
