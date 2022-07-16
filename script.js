@@ -49,13 +49,8 @@ function cssScroll(csdebugsetting) {
 
   })
 }
-/*
-[
-    "pagetop",
-    "intoview",
-    "pastview",
-    "pagebottom"
-  ]*/
+
+
 var cssScrollConditions = {
   pagetop: function(element) {
     var pagetop = window.scrollY == 0
