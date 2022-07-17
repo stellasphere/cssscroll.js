@@ -17,7 +17,7 @@ Install cssscroll.js via a CDN link or by downloading the script and including i
 If you would like to incorporate a scroll effect for a header, where the header shrinks when scrolled down.
 
 **HTML:**  
-You need to include a inline class in the HTML with `scroll-` and whatever scroll event you like.
+You need to include an inline class in the HTML with `scroll-` and whatever scroll event you like.
 In this case, the header is supposed to shrink when scrolled down, so the `notpagetop` event works best.
 (It includes the `not` keyword since using just the `pagetop` event would result in the header shrinking while at the top of the page) 
 ```html
@@ -27,6 +27,8 @@ In this case, the header is supposed to shrink when scrolled down, so the `notpa
 ```
 **CSS:**  
 To create scroll effects, you need two different CSS 'rules', one without the active scroll class and one with. 
+
+To make transitions seamless, it is usually best to include a `transition` time so that the changes, in this case to the padding and font size, will occur smoothly instead of it happening suddenly.
 
 
 > For the active scroll class, usually `.scrollactive` will do, but if you have multiple events, you might want to use the more specific class with `-*eventname*` at the end. Ex: `.scrollactive-notpagetop` Either one will work fine. 
@@ -61,6 +63,6 @@ All the available scroll events.
 | `pastview` | When the user's browser window scrolls past the view of the element. |
 | `pagebottom` | When the user is at the very bottom of the webpage. (reached the end of the page) |
 
-> All of the following events can be preceeded by a `not` keyword (ex: `notpagetop`) in order to have the opposite effect.
+> All of the following events can be preceded by a `not` keyword (ex: `notpagetop`) to have the opposite effect.
 
-> For Example: If a element had a `scroll-notpagetop` effect class, it would only take place when the user scrolls the page. (past the very top)
+> For Example: If an element had a `scroll-notpagetop` effect class, it would only take place when the user scrolls the page. (past the very top)
