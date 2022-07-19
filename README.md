@@ -12,7 +12,7 @@ Install cssscroll.js via a CDN link or by downloading the script and including i
 ```
     
 ## Example
-[View CodePen Example](https://codepen.io/stellasphere/pen/NWYdxjL)
+[View Example CodePen](https://codepen.io/stellasphere/pen/NWYdxjL)
 
 If you would like to incorporate a scroll effect for a header, where the header shrinks when scrolled down.
 
